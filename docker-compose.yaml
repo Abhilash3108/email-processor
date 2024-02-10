@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  script:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+  

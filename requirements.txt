@@ -1,0 +1,6 @@
+google-auth==2.7.0
+google-auth-oauthlib==0.4.6
+google-auth-httplib2==0.1.0
+google-api-python-client==2.14.0
+psycopg2-binary==2.9.1
+djangorestframework

@@ -1,0 +1,45 @@
+[
+    {
+        "predicate": "All",
+        "conditions": [
+            {
+                "field_name": "From",
+                "predicate": "Contains",
+                "value": "Tenmiles.com"
+            },
+            {
+                "field_name": "Subject",
+                "predicate": "Contains",
+                "value": "Interview"
+            },
+            {
+                "field_name": "Date Received",
+                "predicate": "is Less than",
+                "value": 2
+            }
+        ],
+        "actions": [
+            "Mark as read",
+            "Move Message"
+        ],
+        "folder": "Inbox"
+    },
+    {
+        "predicate": "Any",
+        "conditions": [
+            {
+                "field_name": "Received",
+                "predicate": "Less than",
+                "value": 7
+            },
+            {
+                "field_name": "Subject",
+                "predicate": "Contains",
+                "value": "Meeting"
+            }
+        ],
+        "actions": [
+            "Mark as unread"
+        ]
+    }
+]
